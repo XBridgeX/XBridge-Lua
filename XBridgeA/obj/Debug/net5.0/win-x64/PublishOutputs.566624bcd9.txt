@@ -1,0 +1,3 @@
+C:\Users\amsq\source\repos\XBridgeA\XBridgeA\bin\Debug\net5.0\win-x64\publish\XBridgeA.pdb
+C:\Users\amsq\source\repos\XBridgeA\XBridgeA\bin\Debug\net5.0\win-x64\publish\lua54.dll
+C:\Users\amsq\source\repos\XBridgeA\XBridgeA\bin\Debug\net5.0\win-x64\publish\XBridgeA.exe

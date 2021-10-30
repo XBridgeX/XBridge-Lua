@@ -1,0 +1,421 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "KeraLua/1.2.15": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/liblua54.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx/native/liblua54.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win-x64/native/lua54.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/lua54.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "NeoLua/1.3.14-beta.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "resource": {
+          "lib/net5.0/de/Neo.Lua.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "NLua/1.5.11": {
+        "type": "package",
+        "dependencies": {
+          "KeraLua": "1.2.15"
+        },
+        "compile": {
+          "lib/net5.0/NLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/NLua.dll": {}
+        }
+      },
+      "WebSocketSharp/1.0.3-rc11": {
+        "type": "package",
+        "compile": {
+          "lib/websocket-sharp.dll": {}
+        },
+        "runtime": {
+          "lib/websocket-sharp.dll": {}
+        }
+      }
+    },
+    "net5.0/win-x64": {
+      "KeraLua/1.2.15": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/lua54.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "NeoLua/1.3.14-beta.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "resource": {
+          "lib/net5.0/de/Neo.Lua.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "NLua/1.5.11": {
+        "type": "package",
+        "dependencies": {
+          "KeraLua": "1.2.15"
+        },
+        "compile": {
+          "lib/net5.0/NLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/NLua.dll": {}
+        }
+      },
+      "WebSocketSharp/1.0.3-rc11": {
+        "type": "package",
+        "compile": {
+          "lib/websocket-sharp.dll": {}
+        },
+        "runtime": {
+          "lib/websocket-sharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KeraLua/1.2.15": {
+      "sha512": "Jyodlxil/AgUcAVGfjhaKLQsLAtZPUUBf5/bSgb2hJBPf2bLCSZ94HFacPNyk/obxS1lPs7HV8Essuye8hpC0w==",
+      "type": "package",
+      "path": "keralua/1.2.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/net46/KeraLua.targets",
+        "keralua.1.2.15.nupkg.sha512",
+        "keralua.nuspec",
+        "lib/MonoAndroid/KeraLua.dll",
+        "lib/MonoAndroid/KeraLua.xml",
+        "lib/net46/KeraLua.dll",
+        "lib/net46/KeraLua.xml",
+        "lib/net5.0/KeraLua.dll",
+        "lib/net5.0/KeraLua.xml",
+        "lib/netcoreapp3.1/KeraLua.dll",
+        "lib/netcoreapp3.1/KeraLua.xml",
+        "lib/netstandard2.0/KeraLua.dll",
+        "lib/netstandard2.0/KeraLua.xml",
+        "lib/uap10.0/KeraLua.dll",
+        "lib/uap10.0/KeraLua.pri",
+        "lib/uap10.0/KeraLua.xml",
+        "lib/xamarinios/KeraLua.dll",
+        "lib/xamarinios/KeraLua.xml",
+        "lib/xamarinmac/KeraLua.dll",
+        "lib/xamarinmac/KeraLua.xml",
+        "lib/xamarintvos/KeraLua.dll",
+        "lib/xamarintvos/KeraLua.xml",
+        "lib/xamarinwatchos/KeraLua.dll",
+        "lib/xamarinwatchos/KeraLua.xml",
+        "runtimes/linux-x64/native/liblua54.so",
+        "runtimes/osx/native/liblua54.dylib",
+        "runtimes/win-x64/native/lua54.dll",
+        "runtimes/win-x86/native/lua54.dll",
+        "runtimes/win10-arm/nativeassets/uap10.0/lua54.dll",
+        "runtimes/win10-arm64/nativeassets/uap10.0/lua54.dll",
+        "runtimes/win10-x64/nativeassets/uap10.0/lua54.dll",
+        "runtimes/win10-x86/nativeassets/uap10.0/lua54.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "NeoLua/1.3.14-beta.0": {
+      "sha512": "lWOC5q7m8DL/IvGbcIyZsrMd4QyL4AIXoV9kMA6mv5z/e9zHbDdjrG7vMMOTGAIh85Pvwtrsz6AqHHL9ISgMvw==",
+      "type": "package",
+      "path": "neolua/1.3.14-beta.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Neo.Lua.dll",
+        "lib/net45/Neo.Lua.pdb",
+        "lib/net45/Neo.Lua.xml",
+        "lib/net45/de/Neo.Lua.resources.dll",
+        "lib/net47/Neo.Lua.dll",
+        "lib/net47/Neo.Lua.pdb",
+        "lib/net47/Neo.Lua.xml",
+        "lib/net47/de/Neo.Lua.resources.dll",
+        "lib/net5.0/Neo.Lua.dll",
+        "lib/net5.0/Neo.Lua.pdb",
+        "lib/net5.0/Neo.Lua.xml",
+        "lib/net5.0/de/Neo.Lua.resources.dll",
+        "lib/netcoreapp2.1/Neo.Lua.dll",
+        "lib/netcoreapp2.1/Neo.Lua.pdb",
+        "lib/netcoreapp2.1/Neo.Lua.xml",
+        "lib/netcoreapp2.1/de/Neo.Lua.resources.dll",
+        "lib/netstandard2.0/Neo.Lua.dll",
+        "lib/netstandard2.0/Neo.Lua.pdb",
+        "lib/netstandard2.0/Neo.Lua.xml",
+        "lib/netstandard2.0/de/Neo.Lua.resources.dll",
+        "neolua.1.3.14-beta.0.nupkg.sha512",
+        "neolua.nuspec"
+      ]
+    },
+    "NLua/1.5.11": {
+      "sha512": "4CFLOT78wn1HZlUZN050miVQON8YftnkdbmnlQpJB0vmSyFgi3VOzpL3fgA43LBdKh52O9J5MbIgHL/R3+Hu5w==",
+      "type": "package",
+      "path": "nlua/1.5.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/MonoAndroid/NLua.dll",
+        "lib/net46/NLua.dll",
+        "lib/net5.0/NLua.dll",
+        "lib/netcoreapp3.1/NLua.dll",
+        "lib/netstandard2.0/NLua.dll",
+        "lib/uap10.0/NLua.dll",
+        "lib/uap10.0/NLua.pri",
+        "lib/xamarinios/NLua.dll",
+        "lib/xamarinmac/NLua.dll",
+        "lib/xamarintvos/NLua.dll",
+        "lib/xamarinwatchos/NLua.dll",
+        "nlua.1.5.11.nupkg.sha512",
+        "nlua.nuspec"
+      ]
+    },
+    "WebSocketSharp/1.0.3-rc11": {
+      "sha512": "7VCF7f7zVMOvLGD8LeGS4DVXc8lOcB6kXnUMeTxigu+PMiU+6wW5Olq2gYrDU8vDRKOwFY+5RyBaLyzb8skEzA==",
+      "type": "package",
+      "path": "websocketsharp/1.0.3-rc11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/websocket-sharp.dll",
+        "lib/websocket-sharp.xml",
+        "websocketsharp.1.0.3-rc11.nupkg.sha512",
+        "websocketsharp.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "NLua >= 1.5.11",
+      "NeoLua >= 1.3.14-beta.0",
+      "WebSocketSharp >= 1.0.3-rc11"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\amsq\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\amsq\\source\\repos\\XBridgeA\\XBridgeA\\XBridgeA.csproj",
+      "projectName": "XBridgeA",
+      "projectPath": "C:\\Users\\amsq\\source\\repos\\XBridgeA\\XBridgeA\\XBridgeA.csproj",
+      "packagesPath": "C:\\Users\\amsq\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amsq\\source\\repos\\XBridgeA\\XBridgeA\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\amsq\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "NLua": {
+            "target": "Package",
+            "version": "[1.5.11, )"
+          },
+          "NeoLua": {
+            "target": "Package",
+            "version": "[1.3.14-beta.0, )"
+          },
+          "WebSocketSharp": {
+            "target": "Package",
+            "version": "[1.0.3-rc11, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8”而不是项目目标框架“net5.0”还原包“WebSocketSharp 1.0.3-rc11”。此包可能与项目不完全兼容。",
+      "libraryId": "WebSocketSharp",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
