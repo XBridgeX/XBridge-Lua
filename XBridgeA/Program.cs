@@ -89,6 +89,8 @@ namespace XBridgeA
         static List<LuaFunction> ffunc = new List<LuaFunction>();
         static void Main(string[] args)
         {
+            Console.WriteLine($"[{DateTime.Now}][INFO] Starting XBridgeA Console...");
+            Console.WriteLine($"[{DateTime.Now}][INFO] Vision 1.1.0.0");
             if (args.Length == 0)
             {
                 Console.WriteLine("请指定一个要加载的LUA文件");
@@ -107,28 +109,29 @@ namespace XBridgeA
                 };
                 File.WriteAllText("./bot/config.json",JsonConvert.SerializeObject(p,Formatting.Indented));
             }
+            Console.WriteLine($"[{DateTime.Now}][INFO] loading ./bot/config.json...");
             cfg = JsonConvert.DeserializeObject<botCfg>(File.ReadAllText("./bot/config.json"));
             void Message(byte type, string data)
             {
                 switch (type)
                 {
                     case 49:
-                        var pack = JsonConvert.DeserializeObject<GroupMessageEventPack>(data);
+                        //var pack = JsonConvert.DeserializeObject<GroupMessageEventPack>(data);
                         foreach(LuaFunction f in gfunc)
                         {
                             try
                             {
-                                f.Call(pack);
+                                f.Call(data);
                             }catch(Exception e) { Console.WriteLine($"[{DateTime.Now}][ERROR] {e.ToString()}"); }
                         }
                         break;
                     case 51:
-                        var p = JsonConvert.DeserializeObject<FriendMessageEventPack>(data);
+                        //var p = JsonConvert.DeserializeObject<FriendMessageEventPack>(data);
                         foreach (LuaFunction f in gfunc)
                         {
                             try
                             {
-                                f.Call(p);
+                                f.Call(data);
                             }
                             catch (Exception e) { Console.WriteLine($"[{DateTime.Now}][ERROR] {e.ToString()}"); }
                         }
@@ -138,12 +141,12 @@ namespace XBridgeA
             void Log(LogType type, string data)
             {
 
-                Console.WriteLine($"[日志][信息]:{type} {data}");
+                Console.WriteLine($"[{DateTime.Now}][INFO] {type} {data}");
             }
 
             void State(StateType type)
             {
-                Console.WriteLine($"[日志][状态]:{type}");
+                Console.WriteLine($"[{ DateTime.Now}][STATE] {type}");
             }
             var colorcfg = new RobotConfig()
             {
@@ -185,6 +188,10 @@ namespace XBridgeA
                 while (true)
                 {
                     string l = Console.ReadLine();
+                    if(l == "stop")
+                    {
+                        Environment.Exit(114514);
+                    }
                 }
             }).Start();
         }
