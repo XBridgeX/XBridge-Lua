@@ -21,3 +21,4 @@ C:\Users\amsq\source\repos\XBridgeA\XBridgeA\obj\Debug\net5.0\win-x64\XBridgeA.d
 C:\Users\amsq\source\repos\XBridgeA\XBridgeA\obj\Debug\net5.0\win-x64\ref\XBridgeA.dll
 C:\Users\amsq\source\repos\XBridgeA\XBridgeA\obj\Debug\net5.0\win-x64\XBridgeA.pdb
 C:\Users\amsq\source\repos\XBridgeA\XBridgeA\obj\Debug\net5.0\win-x64\XBridgeA.genruntimeconfig.cache
+C:\Users\amsq\source\repos\XBridgeA\XBridgeA\bin\Debug\net5.0\win-x64\Newtonsoft.Json.dll

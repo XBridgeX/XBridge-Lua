@@ -85,6 +85,76 @@
           "lib/websocket-sharp.dll": {}
         }
       }
+    },
+    "net5.0/win-x64": {
+      "KeraLua/1.2.15": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/KeraLua.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/lua54.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "NeoLua/1.3.14-beta.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Neo.Lua.dll": {}
+        },
+        "resource": {
+          "lib/net5.0/de/Neo.Lua.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLua/1.5.11": {
+        "type": "package",
+        "dependencies": {
+          "KeraLua": "1.2.15"
+        },
+        "compile": {
+          "lib/net5.0/NLua.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/NLua.dll": {}
+        }
+      },
+      "WebSocketSharp/1.0.3-rc11": {
+        "type": "package",
+        "compile": {
+          "lib/websocket-sharp.dll": {}
+        },
+        "runtime": {
+          "lib/websocket-sharp.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -378,6 +448,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   },
