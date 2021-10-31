@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[1.3.14-beta.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "WebSocketSharp": {
               "target": "Package",
               "version": "[1.0.3-rc11, )"
@@ -73,11 +77,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
